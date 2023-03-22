@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+float a,b,c;
+clrscr();
+printf("enter a");
+scanf("%f",&a);
+printf("enter b");
+scanf("%f",&b);
+printf("enter c");
+scanf("%f",&c);
+if(a>b && a>c)
+printf("a is bigger");
+else if(b>a && b>c)
+printf("b is bigger");
+else(c>a && c>b)
+printf("c is bigger");
+getch();
+return 0;
+}
