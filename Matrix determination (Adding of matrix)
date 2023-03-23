@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int r,co,a[4][4],b[4][4],c[4][4],i,j;
+   clrscr();
+   printf("Enter the number rows of A&B Matrix");
+   scanf("%d",&r);
+   printf("Enter the number columns of A&B Matrix");
+   scanf("%d",&co);
+   printf("Enter the elements of A Matrix:\n");
+   for(i=0;i<r;i++)
+   {
+   for(j=0;j<co;j++)
+   {
+   scanf("%d",&a[i][j]);
+   }
+   }
+   printf("Enter the elements of B Matrix:\n");
+   for(i=0;i<r;i++)
+   {
+   for(j=0;j<co;j++)
+   {
+   scanf("%d",&b[i][j]);
+   }
+   }
+   for(i=0;i<r;i++)
+   {
+   for(j=0;j<co;j++)
+   {
+   c[i][j]=a[i][j]+b[i][j];
+   }
+   }
+   printf("The resultant matrix is:\n");
+   for(i=0;i<r;i++)
+   {
+   for(j=0;j<co;j++)
+   {
+   print("3%d",c[i][j]);
+   }
+   printf("\n");
+   }
+   getch 0;
+}
